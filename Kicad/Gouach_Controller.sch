@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Gouach_Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -57,7 +58,7 @@ F15 "PHASE_2" O R 10050 3000 60
 F16 "PHASE_3" O R 10050 3550 60 
 $EndSheet
 $Comp
-L conn:Conn_01x01 J5
+L Gouach_Controller-rescue:Conn_01x01-conn J5
 U 1 1 53FA5B63
 P 9050 1450
 F 0 "J5" H 9130 1450 50  0000 L CNN
@@ -68,7 +69,7 @@ F 3 "" H 9050 1450 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L conn:Conn_01x01 J4
+L Gouach_Controller-rescue:Conn_01x01-conn J4
 U 1 1 53FA5B6A
 P 9050 1300
 F 0 "J4" H 9130 1300 50  0000 L CNN
@@ -79,7 +80,7 @@ F 3 "" H 9050 1300 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L conn:Conn_01x01 J6
+L Gouach_Controller-rescue:Conn_01x01-conn J6
 U 1 1 53FA5B71
 P 10250 2850
 F 0 "J6" H 10300 2850 50  0000 L CNN
@@ -90,7 +91,7 @@ F 3 "" H 10250 2850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x01 J7
+L Gouach_Controller-rescue:Conn_01x01-conn J7
 U 1 1 53FA5B78
 P 10250 3000
 F 0 "J7" H 10300 3000 50  0000 L CNN
@@ -101,7 +102,7 @@ F 3 "" H 10250 3000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x01 J8
+L Gouach_Controller-rescue:Conn_01x01-conn J8
 U 1 1 53FA5B7F
 P 10250 3550
 F 0 "J8" H 10300 3550 50  0000 L CNN
@@ -996,7 +997,7 @@ Wire Notes Line
 Wire Notes Line
 	8650 1700 8650 1000
 $Comp
-L conn:Conn_01x02 J11
+L Gouach_Controller-rescue:Conn_01x02-conn J11
 U 1 1 540360D1
 P 1350 2850
 F 0 "J11" H 1350 2950 50  0000 C CNN
@@ -1084,17 +1085,6 @@ F 1 "+3V3" H 5950 5600 50  0000 C CNN
 F 2 "" H 5950 5450 50  0001 C CNN
 F 3 "" H 5950 5450 50  0001 C CNN
 	1    5950 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0107
-U 1 1 5F1616E5
-P 1550 4200
-F 0 "#PWR0107" H 1550 4050 50  0001 C CNN
-F 1 "+5V" H 1550 4350 50  0000 C CNN
-F 2 "" H 1550 4200 50  0001 C CNN
-F 3 "" H 1550 4200 50  0001 C CNN
-	1    1550 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1212,7 +1202,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 1650 7250 1600
 $Comp
-L conn:Conn_01x06 J1
+L Gouach_Controller-rescue:Conn_01x06-conn J1
 U 1 1 522DA047
 P 1350 3550
 F 0 "J1" H 1350 3850 60  0000 C CNN
@@ -1278,7 +1268,7 @@ $EndSheet
 Wire Wire Line
 	1550 4300 3250 4300
 $Comp
-L conn:Conn_01x04 J12
+L Gouach_Controller-rescue:Conn_01x04-conn J12
 U 1 1 5E47FB07
 P 1350 6000
 F 0 "J12" H 1350 6200 50  0000 C CNN
@@ -1442,7 +1432,7 @@ F 3 "~" H 1450 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x04 J10
+L Gouach_Controller-rescue:Conn_01x04-conn J10
 U 1 1 5E4E3243
 P 1350 1900
 F 0 "J10" H 1350 2100 50  0000 C CNN
@@ -1470,7 +1460,7 @@ F 3 "" H 1550 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x07 J3
+L Gouach_Controller-rescue:Conn_01x07-conn J3
 U 1 1 5E552A33
 P 1350 5200
 F 0 "J3" H 1350 4800 60  0000 C CNN
@@ -1490,17 +1480,6 @@ F 2 "" H 1550 5500 50  0001 C CNN
 F 3 "" H 1550 5500 50  0001 C CNN
 	1    1550 5500
 	1    0    0    -1  
-$EndComp
-$Comp
-L conn:Conn_01x07 J2
-U 1 1 5E52A003
-P 1350 4500
-F 0 "J2" H 1350 4900 60  0000 C CNN
-F 1 "Peripherals" V 1450 4450 60  0000 C CNN
-F 2 "Romain:TerminalBlock_Phoenix_MPT-2.54mm_7pol" H 1350 4500 60  0001 C CNN
-F 3 "" H 1350 4500 60  0001 C CNN
-	1    1350 4500
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Power_Protection:USBLC6-2SC6 U6
@@ -1688,4 +1667,26 @@ Wire Wire Line
 	1800 3650 1800 3600
 Wire Wire Line
 	1800 3600 1950 3600
+$Comp
+L power:+5V #PWR0107
+U 1 1 5F1616E5
+P 1550 4200
+F 0 "#PWR0107" H 1550 4050 50  0001 C CNN
+F 1 "+5V" H 1550 4350 50  0000 C CNN
+F 2 "" H 1550 4200 50  0001 C CNN
+F 3 "" H 1550 4200 50  0001 C CNN
+	1    1550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Gouach_Controller-rescue:Conn_01x07-conn J2
+U 1 1 5E52A003
+P 1350 4500
+F 0 "J2" H 1350 4900 60  0000 C CNN
+F 1 "Peripherals" V 1450 4450 60  0000 C CNN
+F 2 "Romain:TerminalBlock_Phoenix_MPT-2.54mm_7pol" H 1350 4500 60  0001 C CNN
+F 3 "" H 1350 4500 60  0001 C CNN
+	1    1350 4500
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

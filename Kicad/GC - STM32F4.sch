@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Gouach_Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -4171,7 +4172,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 5950 7500 6200
 $Comp
-L conn:Conn_02x03_Odd_Even J9
+L Gouach_Controller-rescue:Conn_02x03_Odd_Even-conn J9
 U 1 1 53F77410
 P 9750 3050
 F 0 "J9" H 9800 3250 50  0000 C CNN
