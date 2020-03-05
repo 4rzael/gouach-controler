@@ -25,4 +25,5 @@
   (lib (name valves)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/valves.lib)(options "")(descr ""))
   (lib (name Gouach_Controller)(type Legacy)(uri ${KIPRJMOD}/Gouach_Controller.lib)(options "")(descr ""))
   (lib (name Gouach_Controller-rescue)(type Legacy)(uri ${KIPRJMOD}/Gouach_Controller-rescue.lib)(options "")(descr ""))
+  (lib (name custom_components)(type Legacy)(uri ${KIPRJMOD}/components/custom_components.lib)(options "")(descr ""))
 )
