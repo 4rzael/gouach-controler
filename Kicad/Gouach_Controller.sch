@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Gouach_Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1165,17 +1164,6 @@ F 3 "" H 1550 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0123
-U 1 1 5F199967
-P 1550 4400
-F 0 "#PWR0123" H 1550 4150 50  0001 C CNN
-F 1 "GND" V 1550 4200 50  0000 C CNN
-F 2 "" H 1550 4400 50  0001 C CNN
-F 3 "" H 1550 4400 50  0001 C CNN
-	1    1550 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0124
 U 1 1 5F19975B
 P 1550 3550
@@ -1265,8 +1253,6 @@ F34 "CRUISE" I L 3250 4800 60
 F35 "BRAKE" I L 3250 5100 60 
 F36 "LAMP_CMD" O L 3250 5550 50 
 $EndSheet
-Wire Wire Line
-	1550 4300 3250 4300
 $Comp
 L Gouach_Controller-rescue:Conn_01x04-conn J12
 U 1 1 5E47FB07
@@ -1307,64 +1293,10 @@ $EndComp
 Wire Wire Line
 	6550 1900 5800 1900
 Connection ~ 6550 1900
-$Comp
-L power:+5V #PWR01
-U 1 1 5E4B019E
-P 1550 4500
-F 0 "#PWR01" H 1550 4350 50  0001 C CNN
-F 1 "+5V" V 1550 4700 50  0000 C CNN
-F 2 "" H 1550 4500 50  0001 C CNN
-F 3 "" H 1550 4500 50  0001 C CNN
-	1    1550 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5E4B0796
-P 1550 4900
-F 0 "#PWR02" H 1550 4650 50  0001 C CNN
-F 1 "GND" V 1550 4700 50  0000 C CNN
-F 2 "" H 1550 4900 50  0001 C CNN
-F 3 "" H 1550 4900 50  0001 C CNN
-	1    1550 4900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1550 4700 3250 4700
-Wire Wire Line
-	1550 4600 3250 4600
-Wire Wire Line
-	1550 4800 3250 4800
 Text Label 2200 4600 0    40   ~ 0
 PFS
 Text Label 2200 4800 0    40   ~ 0
 CRUISE
-$Comp
-L power:+5V #PWR05
-U 1 1 5E4E1CA3
-P 1550 5000
-F 0 "#PWR05" H 1550 4850 50  0001 C CNN
-F 1 "+5V" V 1550 5200 50  0000 C CNN
-F 2 "" H 1550 5000 50  0001 C CNN
-F 3 "" H 1550 5000 50  0001 C CNN
-	1    1550 5000
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5E4E213F
-P 1550 5300
-F 0 "#PWR06" H 1550 5050 50  0001 C CNN
-F 1 "GND" V 1550 5100 50  0000 C CNN
-F 2 "" H 1550 5300 50  0001 C CNN
-F 3 "" H 1550 5300 50  0001 C CNN
-	1    1550 5300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1550 5100 3250 5100
-Wire Wire Line
-	1550 5200 3250 5200
 Wire Wire Line
 	6000 5500 5950 5500
 Wire Wire Line
@@ -1460,28 +1392,6 @@ F 3 "" H 1550 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Gouach_Controller-rescue:Conn_01x07-conn J3
-U 1 1 5E552A33
-P 1350 5200
-F 0 "J3" H 1350 4800 60  0000 C CNN
-F 1 "Peripherals" V 1450 5150 60  0000 C CNN
-F 2 "Romain:TerminalBlock_Phoenix_MPT-2.54mm_7pol" H 1350 5200 60  0001 C CNN
-F 3 "" H 1350 5200 60  0001 C CNN
-	1    1350 5200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 5E554A00
-P 1550 5500
-F 0 "#PWR0108" H 1550 5250 50  0001 C CNN
-F 1 "GND" H 1550 5350 50  0000 C CNN
-F 2 "" H 1550 5500 50  0001 C CNN
-F 3 "" H 1550 5500 50  0001 C CNN
-	1    1550 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Power_Protection:USBLC6-2SC6 U6
 U 1 1 5E4EB6A7
 P 2400 1950
@@ -1534,8 +1444,6 @@ F 3 "" H 3150 5750 50  0001 C CNN
 	1    3150 5750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1550 5400 1750 5400
 Wire Wire Line
 	1750 5400 1750 5850
 Wire Wire Line
@@ -1668,28 +1576,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 3600 1950 3600
 $Comp
-L power:+5V #PWR0107
-U 1 1 5F1616E5
-P 1550 4200
-F 0 "#PWR0107" H 1550 4050 50  0001 C CNN
-F 1 "+5V" H 1550 4350 50  0000 C CNN
-F 2 "" H 1550 4200 50  0001 C CNN
-F 3 "" H 1550 4200 50  0001 C CNN
-	1    1550 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Gouach_Controller-rescue:Conn_01x07-conn J2
-U 1 1 5E52A003
-P 1350 4500
-F 0 "J2" H 1350 4900 60  0000 C CNN
-F 1 "Peripherals" V 1450 4450 60  0000 C CNN
-F 2 "Romain:TerminalBlock_Phoenix_MPT-2.54mm_7pol" H 1350 4500 60  0001 C CNN
-F 3 "" H 1350 4500 60  0001 C CNN
-	1    1350 4500
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
 U 1 1 5E70AD78
 P 9450 5300
@@ -1701,7 +1587,7 @@ F 3 "~" H 9450 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gouach_components:picto U7
+L Gouach_Controller-rescue:picto-gouach_components U7
 U 1 1 5E728F61
 P 9400 5750
 F 0 "U7" H 9425 5796 50  0000 L CNN
@@ -1712,7 +1598,7 @@ F 3 "" H 9400 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gouach_components:logo U8
+L Gouach_Controller-rescue:logo-gouach_components U8
 U 1 1 5E7299A7
 P 9450 6000
 F 0 "U8" H 9475 6046 50  0000 L CNN
@@ -1721,5 +1607,96 @@ F 2 "logos:logotype" H 9450 6000 50  0001 C CNN
 F 3 "" H 9450 6000 50  0001 C CNN
 	1    9450 6000
 	1    0    0    -1  
+$EndComp
+$Comp
+L Gouach_Controller-rescue:Conn_01x06-conn J2
+U 1 1 5E52A003
+P 1900 4500
+F 0 "J2" H 1900 4900 60  0000 C CNN
+F 1 "Peripherals" V 2000 4450 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1900 4500 60  0001 C CNN
+F 3 "" H 1900 4500 60  0001 C CNN
+	1    1900 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5400 1750 5400
+$Comp
+L Gouach_Controller-rescue:Conn_01x06-conn J3
+U 1 1 5E552A33
+P 1100 5200
+F 0 "J3" H 1100 4800 60  0000 C CNN
+F 1 "Peripherals" V 1200 5150 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1100 5200 60  0001 C CNN
+F 3 "" H 1100 5200 60  0001 C CNN
+	1    1100 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5200 3250 5200
+Wire Wire Line
+	1300 5100 3250 5100
+$Comp
+L power:GND #PWR06
+U 1 1 5E4E213F
+P 1300 5300
+F 0 "#PWR06" H 1300 5050 50  0001 C CNN
+F 1 "GND" V 1300 5100 50  0000 C CNN
+F 2 "" H 1300 5300 50  0001 C CNN
+F 3 "" H 1300 5300 50  0001 C CNN
+	1    1300 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5E4E1CA3
+P 1300 5000
+F 0 "#PWR05" H 1300 4850 50  0001 C CNN
+F 1 "+5V" V 1300 5200 50  0000 C CNN
+F 2 "" H 1300 5000 50  0001 C CNN
+F 3 "" H 1300 5000 50  0001 C CNN
+	1    1300 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 4800 3250 4800
+Wire Wire Line
+	2100 4600 3250 4600
+Wire Wire Line
+	2100 4700 3250 4700
+$Comp
+L power:+5V #PWR01
+U 1 1 5E4B019E
+P 2100 4500
+F 0 "#PWR01" H 2100 4350 50  0001 C CNN
+F 1 "+5V" V 2100 4700 50  0000 C CNN
+F 2 "" H 2100 4500 50  0001 C CNN
+F 3 "" H 2100 4500 50  0001 C CNN
+	1    2100 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 4300 3250 4300
+$Comp
+L power:GND #PWR0123
+U 1 1 5F199967
+P 2100 4400
+F 0 "#PWR0123" H 2100 4150 50  0001 C CNN
+F 1 "GND" V 2100 4200 50  0000 C CNN
+F 2 "" H 2100 4400 50  0001 C CNN
+F 3 "" H 2100 4400 50  0001 C CNN
+	1    2100 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E554A00
+P 1300 5500
+F 0 "#PWR0108" H 1300 5250 50  0001 C CNN
+F 1 "GND" H 1300 5350 50  0000 C CNN
+F 2 "" H 1300 5500 50  0001 C CNN
+F 3 "" H 1300 5500 50  0001 C CNN
+	1    1300 5500
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
